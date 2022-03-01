@@ -32,3 +32,6 @@ body{
     background-color: white;
     color: red;
 }
+.details-section{
+    display: none;
+}
