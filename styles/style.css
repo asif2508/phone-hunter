@@ -5,3 +5,30 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+.main-result{
+    background-color: rgb(229, 236, 241);
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+/* card styles */
+.card-style{
+    padding: 5px 20px;
+    color: rgb(45, 56, 207);
+}
+.button-style{
+    background-color: rgba(45, 56, 207, 0.822);
+    color: white;
+    font-weight: bold;
+}
+.card-style:hover{
+    transform: scale(1.02);
+    transition: all 2s;
+    background-color: red;
+    color: white;
+}
+.card-style:hover .button-style{
+    background-color: white;
+    color: red;
+}

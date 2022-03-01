@@ -17,7 +17,16 @@
         </div>
     </header>
     <main>
-
+        <!-- search area -->
+        <div class="input-group mb-3 w-50 mx-auto mt-3">
+            <input type="text" class="form-control" placeholder="Search your favourite phone" aria-label="Recipient's username" aria-describedby="button-addon2" id="search-input">
+            <button onclick="phoneSearch()" class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
+          </div>
+        <!-- search result -->
+          <div class="container main-result" id="main-result">
+            <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+              </div>
+          </div>
     </main>
     <footer>
 
@@ -25,6 +34,6 @@
     <!-- bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- own js file -->
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
