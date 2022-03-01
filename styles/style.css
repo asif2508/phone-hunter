@@ -1,0 +1,7 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Moon+Dance&family=Poppins:wght@400;500&family=Roboto+Slab&display=swap');
+
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+}
