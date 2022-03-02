@@ -64,7 +64,7 @@ const displayData = datas =>{
         document.getElementById("heading").style.display = 'block';
         document.getElementById("errors").style.display = 'none';
         document.getElementById("main-result").style.display ="block";
-        const datam = datas.slice(0,21);
+        const datam = datas.slice(0,20);
         for(const data of datam){
             const div = document.createElement("div");
             // console.log(datas);
