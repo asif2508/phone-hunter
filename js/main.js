@@ -33,7 +33,8 @@ const displayData = datas =>{
 }
 
 const ShowDetails = details =>{
-    console.log(details);
+    // console.log(details);
+    // document.getElementById("details-section").innerHTML ='';
     const url = `https://openapi.programming-hero.com/api/phone/${details}`
     fetch(url)
     .then(response => response.json())
@@ -41,8 +42,10 @@ const ShowDetails = details =>{
 }
 
 const displayDetails = phoneDetails =>{
-    console.log(phoneDetails)
+    // console.log(phoneDetails)
     const detailsContainer = document.getElementById("details-container");
+    detailsContainer.textContent ='';
+    
     const div = document.createElement('div');
     div.classList.add('row');
     div.classList.add('g-0');
@@ -64,5 +67,7 @@ const displayDetails = phoneDetails =>{
     </div>
     </div>
     `;
+    document.getElementById("heading-details").style.display = 'block';
     detailsContainer.appendChild(div);
+    
 }

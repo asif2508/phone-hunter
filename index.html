@@ -12,26 +12,55 @@
 </head>
 <body>
     <header>
-        <div class="header d-flex justify-content-center mt-5">
-            <h1>Modern Android Store</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Android Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
     </header>
     <main>
         <!-- search area -->
-        <div class="input-group mb-3 w-50 mx-auto mt-3">
-            <input type="text" class="form-control" placeholder="Search your favourite phone" aria-label="Recipient's username" aria-describedby="button-addon2" id="search-input">
-            <button onclick="phoneSearch()" class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
+        <div class="container-fluid back-design">
+          <div class="header d-flex justify-content-center mt-5">
+            <h1>Modern Android Store</h1>
+          </div>
+          <div class="input-group mb-3 w-50 mx-auto mt-3 mb-8">
+              <input type="text" class="form-control" placeholder="Search your favourite phone" aria-label="Recipient's username" aria-describedby="button-addon2" id="search-input">
+              <button onclick="phoneSearch()" class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
+          </div>
         </div>
         <!-- details  -->
-        <div class="container d-flex justify-content-center align-items-center details-section" id="details-section">
-            <div >
-                <div id="details-container" class="card mb-3" style="max-width: 600px;">
-
-                  </div>
+          <div class="container d-flex flex-column justify-content-center align-items-center mt-5 mb-5" id="details-section">
+            <h3 class="heading-details" id="heading-details">Phone Details</h3>
+            <div id="details-container" class="card mb-3" style="max-width: 800px;">
             </div>
-        </div>
+          </div>
+        
         <!-- search result -->
-        <div class="container main-result" id="main-result">
+        <div class="container main-result mt-5 mb-5" id="main-result">
+          <h3 class="heading">Available Phones</h3>
         <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
             </div>
         </div>
