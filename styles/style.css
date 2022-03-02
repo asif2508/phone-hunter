@@ -15,26 +15,29 @@ body{
 /* card styles */
 .card-style{
     padding: 5px 20px;
-    color: rgb(45, 56, 207);
+    color: black;
 }
 .button-style{
-    background-color: rgba(45, 56, 207, 0.822);
+    background-color: black;
     color: white;
     font-weight: bold;
+}
+.button-style:active{
+    background-color: red;
 }
 .card-style:hover{
     transform: scale(1.02);
     transition: all 2s;
-    background-color: red;
+    background-color: #000000;
     color: white;
 }
 .card-style:hover .button-style{
     background-color: white;
-    color: red;
+    color: #000000;
 }
-/* .details-section{
+.details-section{
     display: none;
-} */
+}
 .back-design{
     background-image: url("https://images.unsplash.com/photo-1585250003309-694ff34512d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1vYmlsZSUyMHNob3AlMjBiYW5uZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
     background-repeat: no-repeat;
@@ -51,4 +54,41 @@ body{
     margin-bottom: 10px;
     text-align: center;
     display: none;
+}
+.footer-design{
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
+}
+
+/* mobile-section  */
+.mobile-heading{
+    text-align: center;
+    /* color: #14274A; */
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.desc{
+    border-left: 2px solid #14274A;
+    padding: 3%;
+}
+
+.break-para{
+    /* color: #14274A; */
+    word-wrap: break-word;
+}
+
+.book-btn{
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+    padding: 8px 8px;
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+.book-btn:hover{
+    background-color: white;
+    color: #000000;
+    border: 2px solid #000000;
 }

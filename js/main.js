@@ -2,6 +2,9 @@ const phoneSearch = () =>{
     const searchInput = document.getElementById("search-input");
     const searchInputValue = searchInput.value;
     searchInput.value = '';
+    document.getElementById("details-section").style.display = 'none';
+    document.getElementById("heading-details").style.display = 'none';
+    document.getElementById("details-container").style.display = 'none';
     const url = `https://openapi.programming-hero.com/api/phones?search=${searchInputValue}`;
     // console.log(url);
     fetch(url)
@@ -13,6 +16,7 @@ const displayData = datas =>{
     
     const searchResult = document.getElementById("search-result");
     searchResult.textContent = '';
+    document.getElementById("mobile-design").textContent = '';
     document.getElementById("main-result").style.display ="block";
     for(const data of datas){
         const div = document.createElement("div");
@@ -45,7 +49,6 @@ const displayDetails = phoneDetails =>{
     // console.log(phoneDetails)
     const detailsContainer = document.getElementById("details-container");
     detailsContainer.textContent ='';
-    
     const div = document.createElement('div');
     div.classList.add('row');
     div.classList.add('g-0');
@@ -67,7 +70,9 @@ const displayDetails = phoneDetails =>{
     </div>
     </div>
     `;
+    document.getElementById("details-section").style.display ="block";
     document.getElementById("heading-details").style.display = 'block';
+    document.getElementById("details-container").style.display = 'block';
     detailsContainer.appendChild(div);
     
 }
