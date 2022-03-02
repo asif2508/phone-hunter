@@ -92,3 +92,9 @@ body{
     color: #000000;
     border: 2px solid #000000;
 }
+/* error */
+.error-message{
+    display: none;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
