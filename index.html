@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
+    <!-- header section  -->
     <header>
+      <!-- navigation bar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <a class="navbar-brand" href="#">Modern Android Store</a>
@@ -40,19 +42,21 @@
         </div>
       </nav>
     </header>
+    <!-- main section  -->
     <main>
         <!-- search area -->
         <div class="container-fluid back-design">
           <div class="header d-flex justify-content-center mt-5">
             <h1>Modern Android Store</h1>
           </div>
-          <div class="input-group mb-3 w-50 mx-auto mt-3 mb-8">
+          <div class="input-group mb-3 w-50 mx-auto mt-3 mb-3">
               <input type="text" class="form-control" placeholder="Search your favourite phone" aria-label="Recipient's username" aria-describedby="button-addon2" id="search-input">
               <button onclick="phoneSearch()" class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
           </div>
         </div>
+
         <!-- details  -->
-          <div class="container d-flex flex-column justify-content-center align-items-center mt-5 mb-5"  id="details-section">
+          <div class="container d-flex flex-column justify-content-center align-items-center mt-2 mb-2"  id="details-section">
             <h3 class="heading-details" id="heading-details">Phone Details</h3>
             <div id="details-container" class="card mb-3" style="max-width: 800px;">
             </div>
@@ -67,8 +71,10 @@
         <div class="d-flex justify-content-center align-items-center error-message">
           <h1 class="error-message"  id="errors">Sorry! No search result found</h1>
         </div>
+
+        
         <!-- mobile photo and des -->
-        <div class="container d-flex justify-content-center align-items-center flex-column" id="mobile-design">
+        <div class="container d-flex justify-content-center align-items-center flex-column pt-0" id="mobile-design">
           <h3 class="mobile-heading">
               What We Have
           </h3>
@@ -92,6 +98,8 @@
               </div>
           </div>
     </main>
+
+    <!-- foooter deisgn -->
     <footer>
       <div class="d-flex justify-content-center align-items-center pt-3 pb-3 footer-design">
         <h6>Modern Android store © All rights reserved</h6>

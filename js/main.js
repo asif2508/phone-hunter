@@ -1,18 +1,29 @@
 const phoneSearch = () =>{
+    // getting input values
     const searchInput = document.getElementById("search-input");
     const searchInputValue = searchInput.value;
+
+    // cleaning previous value
     searchInput.value = '';
     document.getElementById("details-section").style.display = 'none';
     document.getElementById("heading-details").style.display = 'none';
     document.getElementById("details-container").style.display = 'none';
+
+    // getting the url
     const url = `https://openapi.programming-hero.com/api/phones?search=${searchInputValue}`;
-    // console.log(url);
+    
+    // geiing search result
     fetch(url)
     .then(response => response.json())
     .then(result => displayData(result.data))
     
 }
+// display data function
 const displayData = datas =>{
+
+    // checking if the array is empty or not
+    // and displaying data
+    // displaying less than 15 or 15 phones
     if(datas.length == 0){
         const searchResult = document.getElementById("search-result");
         searchResult.textContent = '';
@@ -73,9 +84,9 @@ const displayData = datas =>{
     }
 }
 
+// getiing details function 
 const ShowDetails = details =>{
-    // console.log(details);
-    // document.getElementById("details-section").innerHTML ='';
+    // getting the details url
     const url = `https://openapi.programming-hero.com/api/phone/${details}`
     fetch(url)
     .then(response => response.json())
@@ -83,6 +94,7 @@ const ShowDetails = details =>{
 }
 
 const displayDetails = phoneDetails =>{
+    // displaying the details
     console.log(phoneDetails)
     const detailsContainer = document.getElementById("details-container");
     detailsContainer.textContent ='';
@@ -90,6 +102,7 @@ const displayDetails = phoneDetails =>{
     div.classList.add('row');
     div.classList.add('g-0');
     const release = 'No release date found'
+    // checking if the release date is there or not
     if(phoneDetails.releaseDate == ''){
         div.innerHTML = `
         <div class="col-md-4">
@@ -126,6 +139,7 @@ const displayDetails = phoneDetails =>{
         </div>
         `;
     }
+    // displaying the result
     document.getElementById("details-section").style.display ="block";
     document.getElementById("heading-details").style.display = 'block';
     document.getElementById("details-container").style.display = 'block';

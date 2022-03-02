@@ -38,12 +38,15 @@ body{
 .details-section{
     display: none;
 }
+/* background design  */
 .back-design{
     background-image: url("https://images.unsplash.com/photo-1585250003309-694ff34512d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1vYmlsZSUyMHNob3AlMjBiYW5uZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
     background-repeat: no-repeat;
     padding: 50px 0;
     background-size: cover;
 }
+
+/* heading designing */
 .heading{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -55,6 +58,8 @@ body{
     text-align: center;
     display: none;
 }
+
+/* footer design  */
 .footer-design{
     margin-bottom: 0;
     background-color: black;
