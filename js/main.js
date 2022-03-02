@@ -33,7 +33,7 @@ const displayData = datas =>{
         document.getElementById("errors").style.display = 'block';
 
     }
-    else if(datas.length < 16 && datas.length >0){
+    else if(datas.length <20 && datas.length >0){
         const searchResult = document.getElementById("search-result");
         searchResult.textContent = '';
         document.getElementById("mobile-design").textContent = '';
@@ -64,7 +64,7 @@ const displayData = datas =>{
         document.getElementById("heading").style.display = 'block';
         document.getElementById("errors").style.display = 'none';
         document.getElementById("main-result").style.display ="block";
-        const datam = datas.slice(0,15);
+        const datam = datas.slice(0,21);
         for(const data of datam){
             const div = document.createElement("div");
             // console.log(datas);
@@ -117,6 +117,7 @@ const displayDetails = phoneDetails =>{
             <p class="card-text mt-0">Storage: ${phoneDetails.mainFeatures.storage}</p>
             <p class="card-text mt-0">DisplaySize: ${phoneDetails.mainFeatures.displaySize}</p>
             <p class="card-text mt-0">Memory: ${phoneDetails.mainFeatures.memory}</p>
+            <p class="card-text mt-0">Sensor: ${phoneDetails.mainFeatures.sensors}</p>
         </div>
         </div>
         `;
@@ -135,6 +136,7 @@ const displayDetails = phoneDetails =>{
             <p class="card-text mt-0">Storage: ${phoneDetails.mainFeatures.storage}</p>
             <p class="card-text mt-0">DisplaySize: ${phoneDetails.mainFeatures.displaySize}</p>
             <p class="card-text mt-0">Memory: ${phoneDetails.mainFeatures.memory}</p>
+            <p class="card-text mt-0">Sensor: ${phoneDetails.mainFeatures.sensors}</p>
         </div>
         </div>
         `;
